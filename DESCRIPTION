@@ -14,11 +14,9 @@ Depends:
     plyr,
     doBy,
     ggplot2,
-    knitr
 Imports:
     dplyr,
     plyr,
     doBy,
     ggplot2,
-    knitr
 RoxygenNote: 6.1.1
