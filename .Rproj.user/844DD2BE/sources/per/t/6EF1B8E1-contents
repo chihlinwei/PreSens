@@ -13,9 +13,10 @@ Depends:
     dplyr,
     plyr,
     doBy,
-    ggplot2.
+    ggplot2,
     knitr
-Import:dplyr,
+Imports:
+    dplyr,
     plyr,
     doBy,
     ggplot2,
