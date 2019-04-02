@@ -1,0 +1,19 @@
+Package: faodosimeeting
+Type: Package
+Title: Data package for DOSI-FAO Climage Change and Fisheries Meeting
+Version: 1.2
+Author: Chih-Lin Wei
+Maintainer: Chih-Lin Wei <chihlinwei@gmail.com>
+Description: This package containing various oceanographic, climate change projection, vulnerable marine ecosystem and FAO data 
+    for DOSI-FAO meeting on August 26 and 27, 2017.
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+Depends:
+    R (>= 3.4.2),
+    raster,
+    lattice
+Imports:
+    raster,
+    lattice
+RoxygenNote: 6.0.1
