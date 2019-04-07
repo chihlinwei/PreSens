@@ -10,7 +10,7 @@ touPlot(x)
 \item{x}{a dataframe derived from \code{\link[PreSens]{keepLast}}}
 }
 \description{
-This function plots TOU and the 85% of the initial DO value
+This function plots TOU and the 85\% of the initial DO value
 }
 \examples{
 dat <- keepLast("D:/Projects_MOST/GPSC_cruise/OR1_1219/scoc1219/measurement")

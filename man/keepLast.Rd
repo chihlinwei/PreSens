@@ -2,21 +2,18 @@
 % Please edit documentation in R/keepLast.R
 \name{keepLast}
 \alias{keepLast}
-\title{Plot a Raster* object with terrain and bathymetry}
+\title{Extract the last observation of each time series}
 \usage{
-keepLast(...)
-}
-\arguments{
-\item{...}{Any argument that can be passed to \code{\link[base]{dir}}}
-
-\item{path}{a character vector of full path names; the default corresponds to the working directory,
-\code{\link[base]{getwd}}. Tilde expansion (see \code{\link[base]{path.expand}}) is performed. Missing values will be ignored.}
+keepLast()
 }
 \description{
-This function is a wrapper of  \code{\link[raster]{spplot}}
+This function the last observation of each time series from PreSens logging data
+}
+\details{
+Set the working directory to the directory of PreSens data using \code{\link[base]{setwd}}
 }
 \examples{
-keepLast("D:/Projects_MOST/GPSC_cruise/OR1_1219/scoc1219/measurement")
+keepLast()
 }
 \author{
 Chih-Lin Wei <chihlinwei@gmail.com>

@@ -1,18 +1,16 @@
-#' Plot a Raster* object with terrain and bathymetry
+#' Extract the last observation of each time series
 #'
-#' This function is a wrapper of  \code{\link[raster]{spplot}}
+#' This function the last observation of each time series from PreSens logging data
 #'
-#' @param path a character vector of full path names; the default corresponds to the working directory,
-#' \code{\link[base]{getwd}}. Tilde expansion (see \code{\link[base]{path.expand}}) is performed. Missing values will be ignored.
-#' @param ... Any argument that can be passed to \code{\link[base]{dir}}
+#' @details Set the working directory to the directory of PreSens data using \code{\link[base]{setwd}}
 #' @author Chih-Lin Wei <chihlinwei@@gmail.com>
 #' @export
 #' @examples
-#' keepLast("D:/Projects_MOST/GPSC_cruise/OR1_1219/scoc1219/measurement")
+#' keepLast()
 
 # Function to get last observation of each time series measurements
-keepLast <- function(...){
-  f <- dir(pattern=".csv",...)
+keepLast <- function(){
+  f <- dir(pattern=".csv")
   out <-NULL
   for(j in 1:length(f)){
     d <- read.csv(f[j], skip=1, sep=";", nrows=0) %>% subset(!is.na(Value))

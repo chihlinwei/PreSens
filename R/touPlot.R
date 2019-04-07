@@ -1,6 +1,6 @@
 #' Plot TOU
 #'
-#' This function plots TOU and the 85% of the initial DO value
+#' This function plots TOU and the 85\% of the initial DO value
 #'
 #' @param x a dataframe derived from \code{\link[PreSens]{keepLast}}
 #' @author Chih-Lin Wei <chihlinwei@@gmail.com>
