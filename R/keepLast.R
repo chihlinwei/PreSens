@@ -27,7 +27,7 @@ keepLast <- function(){
     } else d$Measurement <- factor(s)
 
     # Extract the last measurement of each continuous time series
-    d <- cbind(Sample=gsub(".csv", "", f[j]),
+    d <- cbind(Sample=gsub("_", "-", gsub(".csv", "", f[j])),
                splitBy(~Measurement, data=d) %>% lapply(FUN=function(x)x[dim(x)[1],]) %>% ldply(.id = "Measurement")
     )
     out <- rbind(out, d)
