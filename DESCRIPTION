@@ -13,10 +13,10 @@ Depends:
     dplyr,
     plyr,
     doBy,
-    ggplot2,
+    ggplot2
 Imports:
     dplyr,
     plyr,
     doBy,
-    ggplot2,
+    ggplot2
 RoxygenNote: 6.1.1
